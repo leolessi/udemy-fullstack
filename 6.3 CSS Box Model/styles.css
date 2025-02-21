@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.image-container img {
+    width: 30%;
+    height: auto;
+}
