@@ -20,13 +20,26 @@
 
 // bottlesOfBeer();
 
+/////////////////////////////////////////////////////////////////////////////////
+
 var numberOfBottles = 100
-while (numberOfBottles >= 1) {
+while (numberOfBottles >= 0) {
     var bottleWord = "bottles";
     if (numberOfBottles === 1) {
         bottleWord = "bottle";
+        console.log("\n" + numberOfBottles + " " + bottleWord + " of beer on the wall, " + numberOfBottles + " " + bottleWord + " of beer.");
+        console.log("Take one down, pass it around, no more bottles of beer on the wall.")
     }
-    console.log(numberOfBottles + bottleWord + " of beer on the wall. " + numberOfBottles + bottleWord + " of beer.");
-    console.log("Take one down, pass it around, " + (numberOfBottles - 1) + bottleWord + " of beer on the wall.")
+    else if (numberOfBottles === 0) {
+        console.log("\nNo more bottles of beer on the wall, no more bottles of beer.");
+        console.log("Go to the store and buy some more, " + (numberOfBottles + 99) + " bottles of beer on the wall.");
+    }
+    else {
+        console.log("\n" + numberOfBottles + " " + bottleWord + " of beer on the wall, " + numberOfBottles + " bottles of beer.");
+        console.log("Take one down and pass it around, " + numberOfBottles + " " + bottleWord + " of beer on the wall.");
+    }
     numberOfBottles--;
 }
+
+/////////////////////////////////////////////////////////////////////////////////
+
