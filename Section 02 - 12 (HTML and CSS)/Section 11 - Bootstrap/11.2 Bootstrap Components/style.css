@@ -1,0 +1,35 @@
+/* estilos gerais do body */
+body {
+    background-color: white;
+}
+
+.container {
+    padding: 0;
+}
+
+/* estilos dos links do header */
+.links-inicio {
+    color: #766695;
+    font-size: 1.5rem;
+    pointer-events: initial;
+}
+
+/* estilos dos botões */
+.btn-login {
+    color: #766695;
+    border-color: #766695;
+}
+
+.btn-cadastro {
+    background-color: #766695;
+    color: white;
+}
+
+/* estilos tratamentos */
+.head-tratamentos {
+    color: #766695;
+    font-size: 4rem;
+    /* text-align: center; */
+}
+
+/* estilos do footer */

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Components</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .feature-icon {
+      width: 4rem;
+      height: 4rem;
+      border-radius: 10%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between pt-3 mb-4">
+      <div class="col-md-3 mb-2 mb-md-0">
+        <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+          <img src="./assets/images/logo_ja_tricologia_terapia_capilar-removebg-preview.png" alt=""
+            style="height: 150px; padding: 0;">
+        </a>
+      </div>
+
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="#" class="nav-link px-2 links-inicio">Início</a></li>
+        <li><a href="#" class="nav-link px-2 links-inicio">Tratamentos</a></li>
+        <li><a href="#" class="nav-link px-2 links-inicio">Contatos</a></li>
+        <li><a href="#" class="nav-link px-2 links-inicio">Sobre nós</a></li>
+        <li><a href="#" class="nav-link px-2 links-inicio">FAQ</a></li>
+      </ul>
+
+      <div class="col-md-3 text-end">
+        <button type="button" class="btn btn-outline-secondary me-2 btn-login">Entrar</button>
+        <button type="button" class="btn btn-secondary btn-cadastro">Cadastrar</button>
+      </div>
+    </header>
+  </div>
+
+  <!-- carrosel de imagens -->
+  <div class="container">
+    <div class="overflow-hidden" style="max-height: 100vh;">
+      <div class="container">
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active c-item">
+              <img src="./assets/images/entrada.jpg" class="d-block w-100 c-img" alt="Slide 1">
+            </div>
+            <div class="carousel-item c-item">
+              <img src="./assets/images/duasCadeiras.jpg" class="d-block w-100 c-img" alt="Slide 2">
+            </div>
+            <div class="carousel-item c-item">
+              <img src="./assets/images/mesaLavagem.jpg" class="d-block w-100 c-img" alt="Slide 3">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="overflow-hidden" style="max-height: 100vh;">
+    <div class="container">
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active c-item">
+            <img src="./assets/images/entrada.jpg" class="d-block w-100 c-img" alt="Slide 1">
+          </div>
+          <div class="carousel-item c-item">
+            <img src="./assets/images/duasCadeiras.jpg" class="d-block w-100 c-img" alt="Slide 2">
+          </div>
+          <div class="carousel-item c-item">
+            <img src="./assets/images/mesaLavagem.jpg" class="d-block w-100 c-img" alt="Slide 3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div> -->
+
+
+  <!-- sec de tratamentos -->
+  <div class="container" style="background-color: #e0ddd3;">
+    <div class="container px-4 py-3 mt-5" id="featured-3">
+      <h2 class="pb-2 border-bottom head-tratamentos"">
+        Tratamentos
+      </h2>
+    <div class=" row g-4 py-5 row-cols-1 row-cols-lg-3">
+        <div class="feature col">
+          <h3 class="fs-2 text-body-emphasis tipos-tratamentos">Laserterapia</h3>
+          <p>Tem ação fotobioreguladora e fotobioestimuladora, aumentando a produção de ATP que consequentemente,
+            melhora circulação sanguínea na região e estimula crescimento e fortalecimentos dos fios.</p>
+        </div>
+        <div class="feature col">
+          <h3 class="fs-2 text-body-emphasis">Eletroterapia</h3>
+          <p>Utilização do aparelho de alta frequência que faz liberação de ozônio, tendo uma ação bactericida e
+            fungicida, além de ajudar a acalmar o couro cabeludo e cicatrizar regiões lesionadas.</p>
+        </div>
+        <div class="feature col">
+          <h3 class="fs-2 text-body-emphasis">Ozonioterapia</h3>
+          <p>Ação calmante do couro cabeludo, bactericida e fungicida, ajuda em diversas patologias como por exemplo
+            psoríase, dermatite seborreica, entre outros.</p>
+        </div>
+    </div>
+
+    <div class="container px-0 py-0" id="featured-3">
+      <div class=" row g-4 py-3 row-cols-1 row-cols-lg-3">
+        <div class="feature col">
+          <h3 class="fs-2 text-body-emphasis">Para a haste capilar</h3>
+          <p>São tratamentos variados para diminuir impactos de procedimentos químicos como luzes, coloração,
+            alisamentos,
+            entre outros, além de proporcionar para os cabelos e couro cabeludo mais vitalidade, brilho e maciez.</p>
+        </div>
+        <div class="feature col">
+          <h3 class="fs-2 text-body-emphasis">Intradermoterapia</h3>
+          <p>Aplicação de medicamentos e nutrientes no couro cabeludo. Também conhecida como mesoterapia, auxilia nos
+            tratamentos de alopecias em geral.</p>
+        </div>
+        <div class="feature col">
+          <h3 class="fs-2 text-body-emphasis">Complementares</h3>
+          <p>Argiloterapia, aromaterapia, desintoxicação do couro cabeludo e haste capilar, entre outros.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
+  <!-- <div class="container px-4 py-5" id="featured-3">
+    <h2 class="pb-2 border-bottom head-tratamentos"">Tratamentos</h2>
+    <div class=" row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <div class="feature col">
+        <h3 class="fs-2 text-body-emphasis tipos-tratamentos">Laserterapia</h3>
+        <p>Tem ação fotobioreguladora e fotobioestimuladora, aumentando a produção de ATP que consequentemente,
+          melhora circulação sanguínea na região e estimula crescimento e fortalecimentos dos fios.</p>
+      </div>
+      <div class="feature col">
+        <h3 class="fs-2 text-body-emphasis">Eletroterapia</h3>
+        <p>Utilização do aparelho de alta frequência que faz liberação de ozônio, tendo uma ação bactericida e
+          fungicida, além de ajudar a acalmar o couro cabeludo e cicatrizar regiões lesionadas.</p>
+      </div>
+      <div class="feature col">
+        <h3 class="fs-2 text-body-emphasis">Ozonioterapia</h3>
+        <p>Ação calmante do couro cabeludo, bactericida e fungicida, ajuda em diversas patologias como por exemplo
+          psoríase, dermatite seborreica, entre outros.</p>
+      </div>
+  </div>
+  <div class="container px-0 py-0" id="featured-3">
+    <div class=" row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <div class="feature col">
+        <h3 class="fs-2 text-body-emphasis">Para a haste capilar</h3>
+        <p>São tratamentos variados para diminuir impactos de procedimentos químicos como luzes, coloração, alisamentos,
+          entre outros, além de proporcionar para os cabelos e couro cabeludo mais vitalidade, brilho e maciez.</p>
+      </div>
+      <div class="feature col">
+        <h3 class="fs-2 text-body-emphasis">Intradermoterapia</h3>
+        <p>Aplicação de medicamentos e nutrientes no couro cabeludo. Também conhecida como mesoterapia, auxilia nos
+          tratamentos de alopecias em geral.</p>
+      </div>
+      <div class="feature col">
+        <h3 class="fs-2 text-body-emphasis">Complementares</h3>
+        <p>Argiloterapia, aromaterapia, desintoxicação do couro cabeludo e haste capilar, entre outros.</p>
+      </div>
+    </div>
+  </div> -->
+
+
+
+
+
+  <!-- <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1">
+        </button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2">
+        </button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3">
+        </button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./couple.jpg" class="d-block w-100" alt="couple">
+        </div>
+        <div class="carousel-item">
+          <img src="./dog.jpg" class="d-block w-100" alt="dog">
+        </div>
+        <div class="carousel-item">
+          <img src="./family.jpg" class="d-block w-100" alt="family">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div> -->
+
+  <div class="container container-footer">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <div class="col-md-5 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1 mx-3">
+          <img src="./assets/images/logo_ja_tricologia_terapia_capilar-removebg-preview.png" alt="" height="100px">
+        </a>
+        <span class="mb-3 mb-md-0 text-body-secondary">© 2024 J.A Tricologia e Terapia Capilar</span>
+      </div>
+
+      <ul class="nav col-md-5 justify-content-end list-unstyled d-flex">
+        <li class="ms-3">
+          <a class="text-body-secondary" href="#">
+            <img src="./twitter-icon.png" alt="" height="36">
+          </a>
+        </li>
+        <li class="ms-3">
+          <a class="text-body-secondary" href="#">
+            <img src="./instagram-icon.png" alt="" height="36">
+          </a>
+        </li>
+        <li class="ms-3 mx-3">
+          <a class="text-body-secondary" href="#">
+            <img src="./facebook-icon.png" alt="" height="36">
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
